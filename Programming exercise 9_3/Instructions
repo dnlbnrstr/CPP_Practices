@@ -1,0 +1,6 @@
+Begin with the following structure declaration:
+struct chaff
+{
+char dross[20];
+int slag;
+};
