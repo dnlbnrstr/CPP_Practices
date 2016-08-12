@@ -30,12 +30,15 @@ int setgolf(golf & g) {
 
 	using std::cout;
 	using std::cin;
-
+	
 	cout << "Enter fullname (up to 39 characters): ";
 	cin.getline(g.fullname, Len - 1);
-
+	if(g.fullname[0] == '\0'){
+		return 0;
+	}
 	cout << "Enter handicap: ";
 	cin >> g.handicap;
+	cin.get();
 
 	return 1;
 
